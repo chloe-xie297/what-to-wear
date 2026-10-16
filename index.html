@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What to Wear</title>
-    <script type="module" crossorigin src="/what-to-wear/assets/index-DaEsefeR.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-D203cSXi.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-BHxtYEOn.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-aSgeWAH1.css">
   </head>
   <body>
-    <main>
+    <div id="sky" class="sky" aria-hidden="true"></div>
+
+    <main id="home">
       <h1>What to Wear</h1>
+
+      <div id="warnings" class="warning-banner" role="alert" hidden></div>
 
       <section class="card" aria-labelledby="weather-heading">
         <h2 id="weather-heading">Today's weather</h2>
@@ -24,9 +28,27 @@
         <div id="outfit" aria-live="polite"></div>
       </section>
 
-      <section class="card" aria-labelledby="closet-heading">
-        <h2 id="closet-heading">My closet</h2>
-        <form id="add-form">
+      <section class="card closet-entry" aria-labelledby="closet-heading">
+        <button id="open-closet" type="button" class="wardrobe-button" aria-describedby="closet-summary">
+          <span id="wardrobe-art"></span>
+          <span class="wardrobe-text">
+            <span id="closet-heading" class="wardrobe-title">My closet</span>
+            <span id="closet-summary" class="status"></span>
+            <span class="wardrobe-hint">Tap to open ›</span>
+          </span>
+        </button>
+      </section>
+    </main>
+
+    <main id="closet-screen" hidden>
+      <div class="screen-header">
+        <button id="close-closet" type="button" class="secondary back-button">‹ Back</button>
+        <h1>My closet</h1>
+      </div>
+
+      <section class="card add-panel">
+        <button id="toggle-add" type="button" aria-expanded="false" aria-controls="add-form">+ Add clothes</button>
+        <form id="add-form" hidden>
           <label class="photo-picker">
             <span>Photo</span>
             <input id="photo" name="photo" type="file" accept="image/*" required />
@@ -44,10 +66,12 @@
             <input id="name" name="name" type="text" maxlength="40" placeholder="e.g. grey hoodie" />
           </label>
           <button type="submit">Add to closet</button>
-          <p id="form-status" class="status" aria-live="polite"></p>
         </form>
-        <div id="closet"></div>
+        <p id="form-status" class="status" aria-live="polite"></p>
       </section>
+
+      <div id="closet" class="wardrobe-interior"></div>
     </main>
+
   </body>
 </html>
