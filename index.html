@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What to Wear</title>
-    <script type="module" crossorigin src="/what-to-wear/assets/index-BHxtYEOn.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-aSgeWAH1.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-CbElYmH1.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-D4_RIoL1.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
 
     <main id="home">
       <h1>What to Wear</h1>
+
+      <div class="day-switch" role="group" aria-label="Which day to dress for">
+        <button type="button" data-day="today" aria-pressed="true">Today</button>
+        <button type="button" data-day="tomorrow" aria-pressed="false">Tomorrow</button>
+      </div>
 
       <div id="warnings" class="warning-banner" role="alert" hidden></div>
 
@@ -23,7 +28,10 @@
       <section class="card" aria-labelledby="outfit-heading">
         <div class="section-header">
           <h2 id="outfit-heading">Today's outfit</h2>
-          <button id="reshuffle" type="button" class="secondary" hidden>Show another</button>
+          <div class="header-actions">
+            <button id="reshuffle" type="button" class="secondary" hidden>Show another</button>
+            <button id="try-on" type="button" hidden>Try it on</button>
+          </div>
         </div>
         <div id="outfit" aria-live="polite"></div>
       </section>
@@ -71,6 +79,50 @@
       </section>
 
       <div id="closet" class="wardrobe-interior"></div>
+    </main>
+
+    <main id="fitting-screen" hidden>
+      <div class="screen-header">
+        <button id="close-fitting" type="button" class="secondary back-button">‹ Back</button>
+        <h1>Fitting room</h1>
+      </div>
+
+      <div class="fitting-layout">
+        <div class="card mirror">
+          <p id="fitting-day" class="status"></p>
+          <div id="mannequin" class="mannequin"></div>
+          <p class="status">Drag to turn the mannequin around.</p>
+        </div>
+
+        <div class="fitting-side">
+          <section class="card" aria-labelledby="swap-heading">
+            <h2 id="swap-heading">Swap pieces</h2>
+            <p class="status">Use the arrows to try other clothes that are about as warm.</p>
+            <div id="swap-controls"></div>
+          </section>
+
+          <details id="body-panel" class="card">
+            <summary>My measurements</summary>
+            <form id="body-form" novalidate>
+              <fieldset>
+                <legend>Mannequin</legend>
+                <div id="figure-options" class="chips"></div>
+              </fieldset>
+              <div class="measurements">
+                <label>Height <span class="with-unit"><input id="body-heightCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
+                <label>Weight <span class="with-unit"><input id="body-weightKg" type="number" inputmode="decimal" step="0.5" /> kg</span></label>
+                <label>Bust <span class="with-unit"><input id="body-bustCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
+                <label>Waist <span class="with-unit"><input id="body-waistCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
+                <label>Hips <span class="with-unit"><input id="body-hipCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
+              </div>
+              <ul id="body-errors" class="form-errors" aria-live="polite"></ul>
+              <button type="submit">Save</button>
+              <p id="body-status" class="status" aria-live="polite"></p>
+              <p class="status">Your measurements are only saved on this device.</p>
+            </form>
+          </details>
+        </div>
+      </div>
     </main>
 
   </body>
