@@ -1,0 +1,546 @@
+{
+  "source": "MakeHuman system clothes (CC0), https://github.com/Makehuman-2/MH2_Asset_Repository_CCO",
+  "units": "cm",
+  "items": [
+    {
+      "id": "womens-tee-jeans",
+      "kind": "outfit",
+      "vertexCount": 2406,
+      "triangleCount": 4236,
+      "hiddenSkinCount": 2746,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 14436,
+        "triangles": 19248,
+        "hiddenSkin": 70080,
+        "weights": 75572,
+        "offsets": 104444,
+        "uvs": 133316
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "womens-tee-jeans.jpg",
+      "normalMap": "womens-tee-jeans-normal.jpg"
+    },
+    {
+      "id": "womens-tee-shorts",
+      "kind": "outfit",
+      "vertexCount": 3204,
+      "triangleCount": 5488,
+      "hiddenSkinCount": 1744,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 19224,
+        "triangles": 25632,
+        "hiddenSkin": 91488,
+        "weights": 94976,
+        "offsets": 133424,
+        "uvs": 171872
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "womens-tee-shorts.jpg",
+      "normalMap": "womens-tee-shorts-normal.jpg"
+    },
+    {
+      "id": "womens-sporty",
+      "kind": "outfit",
+      "vertexCount": 1986,
+      "triangleCount": 3436,
+      "hiddenSkinCount": 2052,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 11916,
+        "triangles": 15888,
+        "hiddenSkin": 57120,
+        "weights": 61224,
+        "offsets": 85056,
+        "uvs": 108888
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "womens-sporty.jpg",
+      "normalMap": "womens-sporty-normal.jpg"
+    },
+    {
+      "id": "womens-shirt-skirt",
+      "kind": "outfit",
+      "vertexCount": 2446,
+      "triangleCount": 4192,
+      "hiddenSkinCount": 2575,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 14676,
+        "triangles": 19568,
+        "hiddenSkin": 69872,
+        "weights": 75024,
+        "offsets": 104376,
+        "uvs": 133728
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "womens-shirt-skirt.jpg",
+      "normalMap": "womens-shirt-skirt-normal.jpg"
+    },
+    {
+      "id": "mens-white-tee-jeans",
+      "kind": "outfit",
+      "vertexCount": 4035,
+      "triangleCount": 7168,
+      "hiddenSkinCount": 2544,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 24212,
+        "triangles": 32284,
+        "hiddenSkin": 118300,
+        "weights": 123388,
+        "offsets": 171808,
+        "uvs": 220228
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.34
+        ],
+        [
+          831,
+          1054,
+          24.098000000000003
+        ],
+        [
+          1042,
+          4016,
+          20.001
+        ]
+      ],
+      "texture": "mens-white-tee-jeans.jpg",
+      "normalMap": "mens-white-tee-jeans-normal.jpg"
+    },
+    {
+      "id": "mens-tee-jeans",
+      "kind": "outfit",
+      "vertexCount": 1887,
+      "triangleCount": 3240,
+      "hiddenSkinCount": 2544,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 11324,
+        "triangles": 15100,
+        "hiddenSkin": 53980,
+        "weights": 59068,
+        "offsets": 81712,
+        "uvs": 104356
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.34
+        ],
+        [
+          831,
+          1054,
+          24.098000000000003
+        ],
+        [
+          1042,
+          4016,
+          20.001
+        ]
+      ],
+      "texture": "mens-tee-jeans.jpg",
+      "normalMap": "mens-tee-jeans-normal.jpg"
+    },
+    {
+      "id": "mens-shirt-jeans",
+      "kind": "outfit",
+      "vertexCount": 2796,
+      "triangleCount": 4800,
+      "hiddenSkinCount": 3264,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 16776,
+        "triangles": 22368,
+        "hiddenSkin": 79968,
+        "weights": 86496,
+        "offsets": 120048,
+        "uvs": 153600
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.34
+        ],
+        [
+          831,
+          1054,
+          24.098000000000003
+        ],
+        [
+          1042,
+          4016,
+          20.001
+        ]
+      ],
+      "texture": "mens-shirt-jeans.jpg",
+      "normalMap": "mens-shirt-jeans-normal.jpg"
+    },
+    {
+      "id": "mens-long-sleeve-jeans",
+      "kind": "outfit",
+      "vertexCount": 2349,
+      "triangleCount": 4120,
+      "hiddenSkinCount": 3264,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 14096,
+        "triangles": 18796,
+        "hiddenSkin": 68236,
+        "weights": 74764,
+        "offsets": 102952,
+        "uvs": 131140
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.34
+        ],
+        [
+          831,
+          1054,
+          24.098000000000003
+        ],
+        [
+          1042,
+          4016,
+          20.001
+        ]
+      ],
+      "texture": "mens-long-sleeve-jeans.jpg",
+      "normalMap": "mens-long-sleeve-jeans-normal.jpg"
+    },
+    {
+      "id": "navy-sneakers",
+      "kind": "shoes",
+      "vertexCount": 1744,
+      "triangleCount": 3064,
+      "hiddenSkinCount": 2286,
+      "layer": 5,
+      "layout": {
+        "refs": 0,
+        "origins": 10464,
+        "triangles": 13952,
+        "hiddenSkin": 50720,
+        "weights": 55292,
+        "offsets": 76220,
+        "uvs": 97148
+      },
+      "scale": [
+        [
+          12989,
+          12858,
+          7.045
+        ],
+        [
+          12836,
+          12884,
+          5.875
+        ],
+        [
+          11787,
+          12437,
+          25.39
+        ]
+      ],
+      "texture": "navy-sneakers.jpg",
+      "normalMap": null
+    },
+    {
+      "id": "grey-sneakers",
+      "kind": "shoes",
+      "vertexCount": 1744,
+      "triangleCount": 3064,
+      "hiddenSkinCount": 2286,
+      "layer": 5,
+      "layout": {
+        "refs": 0,
+        "origins": 10464,
+        "triangles": 13952,
+        "hiddenSkin": 50720,
+        "weights": 55292,
+        "offsets": 76220,
+        "uvs": 97148
+      },
+      "scale": [
+        [
+          12989,
+          12858,
+          7.045
+        ],
+        [
+          12836,
+          12884,
+          5.875
+        ],
+        [
+          11787,
+          12437,
+          25.39
+        ]
+      ],
+      "texture": "grey-sneakers.jpg",
+      "normalMap": null
+    },
+    {
+      "id": "dark-trainers",
+      "kind": "shoes",
+      "vertexCount": 1744,
+      "triangleCount": 3064,
+      "hiddenSkinCount": 2286,
+      "layer": 5,
+      "layout": {
+        "refs": 0,
+        "origins": 10464,
+        "triangles": 13952,
+        "hiddenSkin": 50720,
+        "weights": 55292,
+        "offsets": 76220,
+        "uvs": 97148
+      },
+      "scale": [
+        [
+          12989,
+          12858,
+          7.045
+        ],
+        [
+          12836,
+          12884,
+          5.875
+        ],
+        [
+          11787,
+          12437,
+          25.39
+        ]
+      ],
+      "texture": "dark-trainers.jpg",
+      "normalMap": null
+    },
+    {
+      "id": "brown-loafers",
+      "kind": "shoes",
+      "vertexCount": 1904,
+      "triangleCount": 3320,
+      "hiddenSkinCount": 2286,
+      "layer": 5,
+      "layout": {
+        "refs": 0,
+        "origins": 11424,
+        "triangles": 15232,
+        "hiddenSkin": 55072,
+        "weights": 59644,
+        "offsets": 82492,
+        "uvs": 105340
+      },
+      "scale": [
+        [
+          12989,
+          12858,
+          7.045
+        ],
+        [
+          12836,
+          12884,
+          5.875
+        ],
+        [
+          11787,
+          12437,
+          25.39
+        ]
+      ],
+      "texture": "brown-loafers.jpg",
+      "normalMap": "brown-loafers-normal.jpg"
+    },
+    {
+      "id": "black-shoes",
+      "kind": "shoes",
+      "vertexCount": 1904,
+      "triangleCount": 3320,
+      "hiddenSkinCount": 2286,
+      "layer": 5,
+      "layout": {
+        "refs": 0,
+        "origins": 11424,
+        "triangles": 15232,
+        "hiddenSkin": 55072,
+        "weights": 59644,
+        "offsets": 82492,
+        "uvs": 105340
+      },
+      "scale": [
+        [
+          12989,
+          12858,
+          7.045
+        ],
+        [
+          12836,
+          12884,
+          5.875
+        ],
+        [
+          11787,
+          12437,
+          25.39
+        ]
+      ],
+      "texture": "black-shoes.jpg",
+      "normalMap": "black-shoes-normal.jpg"
+    },
+    {
+      "id": "black-boots",
+      "kind": "shoes",
+      "vertexCount": 2542,
+      "triangleCount": 4128,
+      "hiddenSkinCount": 2286,
+      "layer": 5,
+      "layout": {
+        "refs": 0,
+        "origins": 15252,
+        "triangles": 20336,
+        "hiddenSkin": 69872,
+        "weights": 74444,
+        "offsets": 104948,
+        "uvs": 135452
+      },
+      "scale": [
+        [
+          12989,
+          12858,
+          7.045
+        ],
+        [
+          12836,
+          12884,
+          5.875
+        ],
+        [
+          11787,
+          12437,
+          25.39
+        ]
+      ],
+      "texture": "black-boots.jpg",
+      "normalMap": null
+    },
+    {
+      "id": "fedora",
+      "kind": "hat",
+      "vertexCount": 702,
+      "triangleCount": 1244,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 4212,
+        "triangles": 5616,
+        "hiddenSkin": 20544,
+        "weights": 20544,
+        "offsets": 28968,
+        "uvs": 37392
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.8
+        ],
+        [
+          831,
+          1054,
+          23.298000000000002
+        ],
+        [
+          1042,
+          4016,
+          19.221
+        ]
+      ],
+      "texture": "fedora.jpg",
+      "normalMap": "fedora-normal.jpg"
+    }
+  ]
+}
