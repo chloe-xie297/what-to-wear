@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What to Wear</title>
-    <script type="module" crossorigin src="/what-to-wear/assets/index-DU5amLtq.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-Dc0Vs7WC.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-GEBvdPr6.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-CocBXeJb.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -21,9 +21,11 @@
       <div id="warnings" class="warning-banner" role="alert" hidden></div>
 
       <section class="card" aria-labelledby="weather-heading">
-        <h2 id="weather-heading">Today's weather</h2>
-        <div class="city-picker">
+        <div class="section-header">
+          <h2 id="weather-heading">Today's weather</h2>
           <button id="change-city" type="button" class="secondary">Change city</button>
+        </div>
+        <div class="city-picker">
           <form id="city-form" class="city-form" hidden>
             <label for="city-name">City</label>
             <input id="city-name" type="search" maxlength="60" placeholder="e.g. Shanghai" autocomplete="off" />
@@ -34,7 +36,7 @@
           <div id="city-results" class="city-results"></div>
         </div>
         <div class="outing" role="group" aria-labelledby="outing-label">
-          <span id="outing-label">When are you out?</span>
+          <span id="outing-label">Out from</span>
           <select id="outing-start" aria-label="Going out at"></select>
           <span>to</span>
           <select id="outing-end" aria-label="Back at"></select>
@@ -91,12 +93,28 @@
             <span>Name (optional)</span>
             <input id="name" name="name" type="text" maxlength="40" placeholder="e.g. grey hoodie" />
           </label>
+          <label class="check-option">
+            <input id="remove-background" type="checkbox" checked />
+            <span>Remove the background <span class="status">(on this device; downloads about 50 MB the first time)</span></span>
+          </label>
+          <div id="several-clothes" class="several-clothes" hidden>
+            <button id="pick-piece" type="button" class="secondary">Pick one piece</button>
+            <span id="pick-piece-status" class="status">Photo shows several clothes? Tap the one to keep.</span>
+          </div>
           <button type="submit">Add to closet</button>
         </form>
         <p id="form-status" class="status" aria-live="polite"></p>
+        <p id="cutout-status" class="status" aria-live="polite"></p>
       </section>
 
       <div id="closet" class="wardrobe-interior"></div>
+
+      <dialog id="piece-picker" class="piece-picker" aria-labelledby="piece-picker-heading">
+        <h2 id="piece-picker-heading">Tap the piece to keep</h2>
+        <p class="status">Tap the middle of it. Everything else in the photo will be removed.</p>
+        <img id="piece-picker-photo" alt="Your photo. Tap the piece of clothing to keep." />
+        <button id="piece-picker-cancel" type="button" class="secondary">Cancel</button>
+      </dialog>
     </main>
 
     <main id="fitting-screen" hidden>
