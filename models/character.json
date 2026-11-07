@@ -1,0 +1,494 @@
+{
+  "source": "MakeHuman system assets (CC0), https://github.com/Makehuman-2/MH2_Asset_Repository_CCO",
+  "units": "cm",
+  "items": [
+    {
+      "id": "hair-long",
+      "kind": "hair",
+      "vertexCount": 3314,
+      "triangleCount": 4108,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 19884,
+        "triangles": 26512,
+        "hiddenSkin": 75808,
+        "weights": 75808,
+        "offsets": 115576,
+        "uvs": 155344
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "hair-long.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-ponytail",
+      "kind": "hair",
+      "vertexCount": 4049,
+      "triangleCount": 5352,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 24296,
+        "triangles": 32396,
+        "hiddenSkin": 96620,
+        "weights": 96620,
+        "offsets": 145208,
+        "uvs": 193796
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "hair-ponytail.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-braid",
+      "kind": "hair",
+      "vertexCount": 4771,
+      "triangleCount": 5518,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 28628,
+        "triangles": 38172,
+        "hiddenSkin": 104388,
+        "weights": 104388,
+        "offsets": 161640,
+        "uvs": 218892
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "hair-braid.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-bob",
+      "kind": "hair",
+      "vertexCount": 5961,
+      "triangleCount": 8474,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 35768,
+        "triangles": 47692,
+        "hiddenSkin": 149380,
+        "weights": 149380,
+        "offsets": 220912,
+        "uvs": 292444
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "hair-bob.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-bob-short",
+      "kind": "hair",
+      "vertexCount": 1759,
+      "triangleCount": 2248,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 10556,
+        "triangles": 14076,
+        "hiddenSkin": 41052,
+        "weights": 41052,
+        "offsets": 62160,
+        "uvs": 83268
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "hair-bob-short.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-afro",
+      "kind": "hair",
+      "vertexCount": 2276,
+      "triangleCount": 2192,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 13656,
+        "triangles": 18208,
+        "hiddenSkin": 44512,
+        "weights": 44512,
+        "offsets": 71824,
+        "uvs": 99136
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          17.412
+        ],
+        [
+          831,
+          1054,
+          27.409
+        ],
+        [
+          1042,
+          4016,
+          22.613
+        ]
+      ],
+      "texture": "hair-afro.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-short-1",
+      "kind": "hair",
+      "vertexCount": 3177,
+      "triangleCount": 3678,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 19064,
+        "triangles": 25420,
+        "hiddenSkin": 69556,
+        "weights": 69556,
+        "offsets": 107680,
+        "uvs": 145804
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          16.682
+        ],
+        [
+          831,
+          1054,
+          28.351000000000003
+        ],
+        [
+          1042,
+          4016,
+          23.542
+        ]
+      ],
+      "texture": "hair-short-1.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-short-2",
+      "kind": "hair",
+      "vertexCount": 2061,
+      "triangleCount": 3344,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 12368,
+        "triangles": 16492,
+        "hiddenSkin": 56620,
+        "weights": 56620,
+        "offsets": 81352,
+        "uvs": 106084
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.34
+        ],
+        [
+          831,
+          1054,
+          24.098000000000003
+        ],
+        [
+          1042,
+          4016,
+          20.001
+        ]
+      ],
+      "texture": "hair-short-2.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-short-3",
+      "kind": "hair",
+      "vertexCount": 1071,
+      "triangleCount": 1922,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 6428,
+        "triangles": 8572,
+        "hiddenSkin": 31636,
+        "weights": 31636,
+        "offsets": 44488,
+        "uvs": 57340
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          13.979999999999999
+        ],
+        [
+          831,
+          1054,
+          22.048000000000002
+        ],
+        [
+          1042,
+          4016,
+          18.461000000000002
+        ]
+      ],
+      "texture": "hair-short-3.webp",
+      "normalMap": null
+    },
+    {
+      "id": "hair-short-4",
+      "kind": "hair",
+      "vertexCount": 991,
+      "triangleCount": 1050,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 5948,
+        "triangles": 7932,
+        "hiddenSkin": 20532,
+        "weights": 20532,
+        "offsets": 32424,
+        "uvs": 44316
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.8
+        ],
+        [
+          831,
+          1054,
+          23.298000000000002
+        ],
+        [
+          1042,
+          4016,
+          19.221
+        ]
+      ],
+      "texture": "hair-short-4.webp",
+      "normalMap": null
+    },
+    {
+      "id": "eyebrows",
+      "kind": "eyebrows",
+      "vertexCount": 126,
+      "triangleCount": 192,
+      "hiddenSkinCount": 0,
+      "layer": 5,
+      "layout": {
+        "refs": 0,
+        "origins": 756,
+        "triangles": 1008,
+        "hiddenSkin": 3312,
+        "weights": 3312,
+        "offsets": 4824,
+        "uvs": 6336
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          14.16
+        ],
+        [
+          831,
+          1054,
+          23.073
+        ],
+        [
+          1042,
+          4016,
+          19.231
+        ]
+      ],
+      "texture": "eyebrows.webp",
+      "normalMap": null
+    },
+    {
+      "id": "eyes",
+      "kind": "eyes",
+      "vertexCount": 1076,
+      "triangleCount": 2040,
+      "hiddenSkinCount": 0,
+      "layer": 50,
+      "layout": {
+        "refs": 0,
+        "origins": 6456,
+        "triangles": 8608,
+        "hiddenSkin": 33088,
+        "weights": 33088,
+        "offsets": 46000,
+        "uvs": 58912
+      },
+      "scale": [
+        [
+          5429,
+          12033,
+          16.482
+        ],
+        [
+          831,
+          1054,
+          27.212999999999997
+        ],
+        [
+          1042,
+          4016,
+          22.795
+        ]
+      ],
+      "texture": null,
+      "normalMap": null
+    }
+  ],
+  "eyeColours": [
+    {
+      "id": "brown",
+      "texture": "eyes-brown.webp"
+    },
+    {
+      "id": "brownlight",
+      "texture": "eyes-brownlight.webp"
+    },
+    {
+      "id": "grey",
+      "texture": "eyes-grey.webp"
+    },
+    {
+      "id": "blue",
+      "texture": "eyes-blue.webp"
+    },
+    {
+      "id": "lightblue",
+      "texture": "eyes-lightblue.webp"
+    },
+    {
+      "id": "green",
+      "texture": "eyes-green.webp"
+    },
+    {
+      "id": "bluegreen",
+      "texture": "eyes-bluegreen.webp"
+    }
+  ],
+  "skins": [
+    {
+      "id": "skin-light-womens",
+      "texture": "skin-light-womens.jpg"
+    },
+    {
+      "id": "skin-asian-womens",
+      "texture": "skin-asian-womens.jpg"
+    },
+    {
+      "id": "skin-dark-womens",
+      "texture": "skin-dark-womens.jpg"
+    },
+    {
+      "id": "skin-light-mens",
+      "texture": "skin-light-mens.jpg"
+    },
+    {
+      "id": "skin-asian-mens",
+      "texture": "skin-asian-mens.jpg"
+    },
+    {
+      "id": "skin-dark-mens",
+      "texture": "skin-dark-mens.jpg"
+    }
+  ]
+}

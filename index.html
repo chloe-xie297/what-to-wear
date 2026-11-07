@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What to Wear</title>
-    <script type="module" crossorigin src="/what-to-wear/assets/index-C5rupvzN.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-CgS81MT7.css">
+    <title>What to Wear</title>
+    <script type="module" crossorigin src="/what-to-wear/assets/index-DU5amLtq.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-Dc0Vs7WC.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -22,6 +22,24 @@
 
       <section class="card" aria-labelledby="weather-heading">
         <h2 id="weather-heading">Today's weather</h2>
+        <div class="city-picker">
+          <button id="change-city" type="button" class="secondary">Change city</button>
+          <form id="city-form" class="city-form" hidden>
+            <label for="city-name">City</label>
+            <input id="city-name" type="search" maxlength="60" placeholder="e.g. Shanghai" autocomplete="off" />
+            <button type="submit">Search</button>
+            <button id="use-my-location" type="button" class="secondary">Use my location</button>
+          </form>
+          <p id="city-status" class="status" aria-live="polite"></p>
+          <div id="city-results" class="city-results"></div>
+        </div>
+        <div class="outing" role="group" aria-labelledby="outing-label">
+          <span id="outing-label">When are you out?</span>
+          <select id="outing-start" aria-label="Going out at"></select>
+          <span>to</span>
+          <select id="outing-end" aria-label="Back at"></select>
+        </div>
+        <p id="outing-problem" class="warning" aria-live="polite" hidden></p>
         <div id="weather" aria-live="polite"></div>
       </section>
 
@@ -92,6 +110,7 @@
           <p id="fitting-day" class="status"></p>
           <div id="mannequin" class="mannequin"></div>
           <p class="status">Drag to turn the mannequin around.</p>
+          <button id="close-up-button" type="button" class="secondary">Close-up of face</button>
         </div>
 
         <div class="fitting-side">
@@ -99,6 +118,32 @@
             <h2 id="look-heading">What it's wearing</h2>
             <p class="status">Picked for the weather. Use the arrows to try something else.</p>
             <div id="look-controls"></div>
+          </section>
+
+          <section class="card" aria-labelledby="character-heading">
+            <h2 id="character-heading">My character</h2>
+            <p class="status">Pick a skin tone, hair, eyes and face shape. The mannequin changes right away.</p>
+            <div id="character-options" class="character-options"></div>
+          </section>
+
+          <section class="card" aria-labelledby="try-on-heading">
+            <h2 id="try-on-heading">AI try-on photo</h2>
+            <div id="hf-account" class="hf-account" aria-live="polite"></div>
+            <p class="status">
+              Save a product photo from a brand's website (Zara, Uniqlo…) and add it below. You'll get a photo of the mannequin
+              wearing it from the front. A top and bottom take about a minute.
+            </p>
+            <form id="try-on-form" class="try-on-form">
+              <label class="garment-pick">Top <input id="garment-top" type="file" accept="image/*" /></label>
+              <label class="garment-pick">Bottom <input id="garment-bottom" type="file" accept="image/*" /></label>
+              <label class="garment-pick">Dress <input id="garment-dress" type="file" accept="image/*" /></label>
+              <button id="try-on-button" type="submit">Make try-on photo</button>
+            </form>
+            <p id="try-on-status" class="status" aria-live="polite"></p>
+            <figure id="try-on-result" class="try-on-result" hidden>
+              <img id="try-on-photo" alt="The mannequin wearing the clothes from your product photos" />
+              <figcaption><a id="try-on-save" download="try-on.png">Save photo</a></figcaption>
+            </figure>
           </section>
 
           <details id="body-panel" class="card">
@@ -124,6 +169,6 @@
         </div>
       </div>
     </main>
-
+
   </body>
 </html>

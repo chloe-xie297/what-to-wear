@@ -1,219 +1,483 @@
 {
   "source": "MakeHuman base mesh and targets (CC0), https://github.com/makehumancommunity/makehuman",
   "units": "cm",
-  "vertexCount": 16134,
+  "vertexCount": 16706,
   "bodyVertexCount": 13380,
-  "skinVertexCount": 16054,
+  "skinVertexCount": 16626,
   "joints": {
     "shoulderL": [
-      16054,
-      16055,
-      16056,
-      16057,
-      16058,
-      16059,
-      16060,
-      16061
+      16626,
+      16627,
+      16628,
+      16629,
+      16630,
+      16631,
+      16632,
+      16633
     ],
     "elbowL": [
-      16062,
-      16063,
-      16064,
-      16065,
-      16066,
-      16067,
-      16068,
-      16069
+      16634,
+      16635,
+      16636,
+      16637,
+      16638,
+      16639,
+      16640,
+      16641
     ],
     "wristL": [
-      16070,
-      16071,
-      16072,
-      16073,
-      16074,
-      16075,
-      16076,
-      16077
+      16642,
+      16643,
+      16644,
+      16645,
+      16646,
+      16647,
+      16648,
+      16649
     ],
     "shoulderR": [
-      16078,
-      16079,
-      16080,
-      16081,
-      16082,
-      16083,
-      16084,
-      16085
+      16650,
+      16651,
+      16652,
+      16653,
+      16654,
+      16655,
+      16656,
+      16657
     ],
     "elbowR": [
-      16086,
-      16087,
-      16088,
-      16089,
-      16090,
-      16091,
-      16092,
-      16093
+      16658,
+      16659,
+      16660,
+      16661,
+      16662,
+      16663,
+      16664,
+      16665
     ],
     "wristR": [
-      16094,
-      16095,
-      16096,
-      16097,
-      16098,
-      16099,
-      16100,
-      16101
+      16666,
+      16667,
+      16668,
+      16669,
+      16670,
+      16671,
+      16672,
+      16673
     ],
     "hipL": [
-      16102,
-      16103,
-      16104,
-      16105,
-      16106,
-      16107,
-      16108,
-      16109
+      16674,
+      16675,
+      16676,
+      16677,
+      16678,
+      16679,
+      16680,
+      16681
     ],
     "ankleL": [
-      16110,
-      16111,
-      16112,
-      16113,
-      16114,
-      16115,
-      16116,
-      16117
+      16682,
+      16683,
+      16684,
+      16685,
+      16686,
+      16687,
+      16688,
+      16689
     ],
     "hipR": [
-      16118,
-      16119,
-      16120,
-      16121,
-      16122,
-      16123,
-      16124,
-      16125
+      16690,
+      16691,
+      16692,
+      16693,
+      16694,
+      16695,
+      16696,
+      16697
     ],
     "ankleR": [
-      16126,
-      16127,
-      16128,
-      16129,
-      16130,
-      16131,
-      16132,
-      16133
+      16698,
+      16699,
+      16700,
+      16701,
+      16702,
+      16703,
+      16704,
+      16705
     ]
   },
   "positions": 0,
   "triangleCount": 26756,
-  "triangles": 193608,
+  "triangles": 200472,
+  "skin": {
+    "vertexCount": 14517,
+    "origins": 521544,
+    "uvs": 550580,
+    "triangles": 666716
+  },
   "targets": {
     "female": {
-      "count": 16134,
+      "count": 16706,
       "scale": 0.00028748435926389355,
-      "indices": 627072,
-      "offsets": 659340
+      "indices": 1104184,
+      "offsets": 1137596
     },
     "male": {
-      "count": 16134,
+      "count": 16706,
       "scale": 0.00040528580584124277,
-      "indices": 756144,
-      "offsets": 788412
+      "indices": 1237832,
+      "offsets": 1271244
     },
     "femaleThin": {
-      "count": 6725,
+      "count": 6793,
       "scale": 0.00008728293710135197,
-      "indices": 885216,
-      "offsets": 898668
+      "indices": 1371480,
+      "offsets": 1385068
     },
     "femaleHeavy": {
-      "count": 5294,
+      "count": 5408,
       "scale": 0.00006683553575243385,
-      "indices": 939020,
-      "offsets": 949608
+      "indices": 1425828,
+      "offsets": 1436644
     },
     "maleThin": {
       "count": 6255,
       "scale": 0.0000738547929319132,
-      "indices": 981372,
-      "offsets": 993884
+      "indices": 1469092,
+      "offsets": 1481604
     },
     "maleHeavy": {
-      "count": 6380,
+      "count": 6436,
       "scale": 0.0000793481246375927,
-      "indices": 1031416,
-      "offsets": 1044176
+      "indices": 1519136,
+      "offsets": 1532008
     },
     "femaleShort": {
-      "count": 16134,
-      "scale": 0.001119724112674337,
-      "indices": 1082456,
-      "offsets": 1114724
+      "count": 16706,
+      "scale": 0.001121860408337657,
+      "indices": 1570624,
+      "offsets": 1604036
     },
     "femaleTall": {
-      "count": 16134,
-      "scale": 0.002197943052461318,
-      "indices": 1211528,
-      "offsets": 1243796
+      "count": 16706,
+      "scale": 0.0022016052735984375,
+      "indices": 1704272,
+      "offsets": 1737684
     },
     "maleShort": {
-      "count": 16134,
-      "scale": 0.001119724112674337,
-      "indices": 1340600,
-      "offsets": 1372868
+      "count": 16706,
+      "scale": 0.001121860408337657,
+      "indices": 1837920,
+      "offsets": 1871332
     },
     "maleTall": {
-      "count": 16134,
-      "scale": 0.002197943052461318,
-      "indices": 1469672,
-      "offsets": 1501940
+      "count": 16706,
+      "scale": 0.0022016052735984375,
+      "indices": 1971568,
+      "offsets": 2004980
     },
     "bustSmaller": {
       "count": 1876,
       "scale": 0.00009491256447035127,
-      "indices": 1598744,
-      "offsets": 1602496
+      "indices": 2105216,
+      "offsets": 2108968
     },
     "bustLarger": {
       "count": 1972,
       "scale": 0.00013611255226294748,
-      "indices": 1613752,
-      "offsets": 1617696
+      "indices": 2120224,
+      "offsets": 2124168
     },
     "waistSmaller": {
       "count": 1383,
       "scale": 0.00009857478560747093,
-      "indices": 1629528,
-      "offsets": 1632296
+      "indices": 2136000,
+      "offsets": 2138768
     },
     "waistLarger": {
       "count": 1383,
       "scale": 0.00009857478560747093,
-      "indices": 1640596,
-      "offsets": 1643364
+      "indices": 2147068,
+      "offsets": 2149836
     },
     "hipsSmaller": {
       "count": 1101,
       "scale": 0.00005523850215155492,
-      "indices": 1651664,
-      "offsets": 1653868
+      "indices": 2158136,
+      "offsets": 2160340
     },
     "hipsLarger": {
       "count": 1130,
       "scale": 0.00011078218939786981,
-      "indices": 1660476,
-      "offsets": 1662736
+      "indices": 2166948,
+      "offsets": 2169208
+    },
+    "head-oval": {
+      "count": 2143,
+      "scale": 0.000048219244972075564,
+      "indices": 2175988,
+      "offsets": 2180276
+    },
+    "head-round": {
+      "count": 1974,
+      "scale": 0.000037537766655476546,
+      "indices": 2193136,
+      "offsets": 2197084
+    },
+    "head-square": {
+      "count": 693,
+      "scale": 0.000032349620044557024,
+      "indices": 2208928,
+      "offsets": 2210316
+    },
+    "head-invertedtriangular": {
+      "count": 2005,
+      "scale": 0.000022888882106997894,
+      "indices": 2214476,
+      "offsets": 2218488
+    },
+    "head-diamond": {
+      "count": 679,
+      "scale": 0.00006469924008911405,
+      "indices": 2230520,
+      "offsets": 2231880
+    },
+    "head-rectangular": {
+      "count": 585,
+      "scale": 0.0000445570238349559,
+      "indices": 2235956,
+      "offsets": 2237128
+    },
+    "head-scale-vert-incr": {
+      "count": 4571,
+      "scale": 0.00009613330484939116,
+      "indices": 2240640,
+      "offsets": 2249784
+    },
+    "chin-triangle": {
+      "count": 424,
+      "scale": 0.000026245918149357582,
+      "indices": 2277212,
+      "offsets": 2278060
+    },
+    "chin-width-decr": {
+      "count": 142,
+      "scale": 0.000015564439832758568,
+      "indices": 2280604,
+      "offsets": 2280888
+    },
+    "chin-width-incr": {
+      "count": 198,
+      "scale": 0.00003631702627643666,
+      "indices": 2281740,
+      "offsets": 2282136
+    },
+    "l-eye-scale-incr": {
+      "count": 502,
+      "scale": 0.000007019257179479353,
+      "indices": 2283324,
+      "offsets": 2284328
+    },
+    "r-eye-scale-incr": {
+      "count": 469,
+      "scale": 0.000007019257179479353,
+      "indices": 2287340,
+      "offsets": 2288280
+    },
+    "l-eye-scale-decr": {
+      "count": 469,
+      "scale": 0.00000946073793755913,
+      "indices": 2291096,
+      "offsets": 2292036
+    },
+    "r-eye-scale-decr": {
+      "count": 469,
+      "scale": 0.00000946073793755913,
+      "indices": 2294852,
+      "offsets": 2295792
+    },
+    "l-eye-corner1-up": {
+      "count": 143,
+      "scale": 0.000005493331705679495,
+      "indices": 2298608,
+      "offsets": 2298896
+    },
+    "r-eye-corner1-up": {
+      "count": 126,
+      "scale": 0.000005493331705679495,
+      "indices": 2299756,
+      "offsets": 2300008
+    },
+    "l-eye-corner1-down": {
+      "count": 157,
+      "scale": 0.000006408886989959411,
+      "indices": 2300764,
+      "offsets": 2301080
+    },
+    "r-eye-corner1-down": {
+      "count": 143,
+      "scale": 0.000006408886989959411,
+      "indices": 2302024,
+      "offsets": 2302312
+    },
+    "l-eye-corner2-up": {
+      "count": 166,
+      "scale": 0.000007629627368999298,
+      "indices": 2303172,
+      "offsets": 2303504
+    },
+    "r-eye-corner2-up": {
+      "count": 156,
+      "scale": 0.000007629627368999298,
+      "indices": 2304500,
+      "offsets": 2304812
+    },
+    "l-eye-corner2-down": {
+      "count": 166,
+      "scale": 0.000007629627368999298,
+      "indices": 2305748,
+      "offsets": 2306080
+    },
+    "r-eye-corner2-down": {
+      "count": 156,
+      "scale": 0.000007629627368999298,
+      "indices": 2307076,
+      "offsets": 2307388
+    },
+    "l-eye-height2-decr": {
+      "count": 456,
+      "scale": 0.000006408886989959411,
+      "indices": 2308324,
+      "offsets": 2309236
+    },
+    "r-eye-height2-decr": {
+      "count": 456,
+      "scale": 0.000006408886989959411,
+      "indices": 2311972,
+      "offsets": 2312884
+    },
+    "l-eye-epicanthus-in": {
+      "count": 71,
+      "scale": 0.000008545182653279214,
+      "indices": 2315620,
+      "offsets": 2315764
+    },
+    "r-eye-epicanthus-in": {
+      "count": 71,
+      "scale": 0.000008545182653279214,
+      "indices": 2316192,
+      "offsets": 2316336
+    },
+    "nose-scale-horiz-decr": {
+      "count": 312,
+      "scale": 0.000014038514358958707,
+      "indices": 2316764,
+      "offsets": 2317388
+    },
+    "nose-scale-horiz-incr": {
+      "count": 494,
+      "scale": 0.000010376293221839045,
+      "indices": 2319260,
+      "offsets": 2320248
+    },
+    "nose-scale-vert-decr": {
+      "count": 349,
+      "scale": 0.000023499252296517838,
+      "indices": 2323212,
+      "offsets": 2323912
+    },
+    "nose-volume-decr": {
+      "count": 48,
+      "scale": 0.000023499252296517838,
+      "indices": 2326008,
+      "offsets": 2326104
+    },
+    "nose-nostrils-width-incr": {
+      "count": 280,
+      "scale": 0.000015259254737998596,
+      "indices": 2326392,
+      "offsets": 2326952
+    },
+    "nose-width1-decr": {
+      "count": 62,
+      "scale": 0.000005493331705679495,
+      "indices": 2328632,
+      "offsets": 2328756
+    },
+    "nose-width2-decr": {
+      "count": 40,
+      "scale": 0.0000067140720847193815,
+      "indices": 2329128,
+      "offsets": 2329208
+    },
+    "nose-width3-decr": {
+      "count": 256,
+      "scale": 0.00000946073793755913,
+      "indices": 2329448,
+      "offsets": 2329960
+    },
+    "nose-point-up": {
+      "count": 77,
+      "scale": 0.000014038514358958707,
+      "indices": 2331496,
+      "offsets": 2331652
+    },
+    "nose-hump-incr": {
+      "count": 414,
+      "scale": 0.000013428144169438763,
+      "indices": 2332116,
+      "offsets": 2332944
+    },
+    "mouth-upperlip-volume-incr": {
+      "count": 168,
+      "scale": 0.000007324442274239326,
+      "indices": 2335428,
+      "offsets": 2335764
+    },
+    "mouth-lowerlip-volume-incr": {
+      "count": 187,
+      "scale": 0.000014038514358958707,
+      "indices": 2336772,
+      "offsets": 2337148
+    },
+    "mouth-upperlip-volume-decr": {
+      "count": 108,
+      "scale": 0.000007019257179479353,
+      "indices": 2338272,
+      "offsets": 2338488
+    },
+    "mouth-lowerlip-volume-decr": {
+      "count": 72,
+      "scale": 0.000007019257179479353,
+      "indices": 2339136,
+      "offsets": 2339280
+    },
+    "mouth-scale-horiz-incr": {
+      "count": 876,
+      "scale": 0.000015259254737998596,
+      "indices": 2339712,
+      "offsets": 2341464
+    },
+    "mouth-scale-horiz-decr": {
+      "count": 710,
+      "scale": 0.000016785180211798456,
+      "indices": 2346720,
+      "offsets": 2348140
+    },
+    "mouth-cupidsbow-incr": {
+      "count": 89,
+      "scale": 0.000009155552842799158,
+      "indices": 2352400,
+      "offsets": 2352580
     }
   },
   "follow": {
-    "armL": 514680,
-    "armR": 530736,
-    "forearmL": 546792,
-    "forearmR": 562848,
-    "legL": 578904,
-    "legR": 594960,
-    "breasts": 611016
+    "armL": 987788,
+    "armR": 1004416,
+    "forearmL": 1021044,
+    "forearmR": 1037672,
+    "legL": 1054300,
+    "legR": 1070928,
+    "breasts": 1087556
   }
 }
