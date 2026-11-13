@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What to Wear</title>
-    <script type="module" crossorigin src="/what-to-wear/assets/index-GEBvdPr6.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-CocBXeJb.css">
+    <title>What to Wear</title>
+    <script type="module" crossorigin src="/what-to-wear/assets/index-BXvvNHfb.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-oFhWJmNK.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -107,7 +107,22 @@
         <p id="cutout-status" class="status" aria-live="polite"></p>
       </section>
 
-      <div id="closet" class="wardrobe-interior"></div>
+      <div class="closet-filter" role="group" aria-label="Show clothes by warmth">
+        <button type="button" aria-pressed="true">All</button>
+        <button type="button" data-warmth="1" aria-pressed="false">Light</button>
+        <button type="button" data-warmth="2" aria-pressed="false">Medium</button>
+        <button type="button" data-warmth="3" aria-pressed="false">Warm</button>
+      </div>
+
+      <div class="closet-furniture">
+        <div id="closet" class="wardrobe-interior"></div>
+        <section id="shoe-cabinet" class="shoe-cabinet" aria-labelledby="shoe-cabinet-heading"></section>
+      </div>
+
+      <div id="closet-doors" class="closet-doors" aria-hidden="true" hidden>
+        <div class="closet-door left"></div>
+        <div class="closet-door right"></div>
+      </div>
 
       <dialog id="piece-picker" class="piece-picker" aria-labelledby="piece-picker-heading">
         <h2 id="piece-picker-heading">Tap the piece to keep</h2>
@@ -187,6 +202,6 @@
         </div>
       </div>
     </main>
-
+
   </body>
 </html>
