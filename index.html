@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
     />
-    <script type="module" crossorigin src="/what-to-wear/assets/index-CmJYnMAy.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-B68bGDa5.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-vt_hS-lp.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-BAkz4OH1.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -26,7 +26,11 @@
 
       <div id="warnings" class="warning-banner" role="alert" hidden></div>
 
-      <section class="card" aria-labelledby="weather-heading">
+      <details id="weather-card" class="card weather-card">
+        <summary id="weather-summary" class="weather-summary">
+          <span id="weather-summary-text" class="weather-summary-text">Finding your location…</span>
+          <span class="weather-summary-more" aria-hidden="true"></span>
+        </summary>
         <div class="section-header">
           <h2 id="weather-heading">Today's weather</h2>
           <button id="change-city" type="button" class="secondary">Change city</button>
@@ -49,17 +53,15 @@
         </div>
         <p id="outing-problem" class="warning" aria-live="polite" hidden></p>
         <div id="weather" aria-live="polite"></div>
-      </section>
+      </details>
 
       <section class="card" aria-labelledby="outfit-heading">
         <div class="section-header">
           <h2 id="outfit-heading">Today's outfit</h2>
-          <div class="header-actions">
-            <button id="reshuffle" type="button" class="secondary" hidden>Switch outfit</button>
-            <button id="try-on" type="button" hidden>Try it on</button>
-          </div>
+          <button id="reshuffle" type="button" class="secondary" hidden>Switch outfit</button>
         </div>
         <div id="outfit" aria-live="polite"></div>
+        <button id="try-on" type="button" class="secondary try-on-button" hidden>Try it on the mannequin</button>
       </section>
 
       <section class="card closet-entry" aria-labelledby="closet-heading">
@@ -178,6 +180,14 @@
               wearing it from the front. A top and bottom take about a minute.
             </p>
             <form id="try-on-form" class="try-on-form">
+              <label class="garment-pick"
+                >Your photo (optional)
+                <span class="pick-hint"
+                  >Standing, facing the camera, whole body in the picture, plain background. Leave it empty to use the
+                  mannequin. Your photo is sent to the free AI service on Hugging Face and isn't saved in the app.</span
+                >
+                <input id="person-photo" type="file" accept="image/*"
+              /></label>
               <label class="garment-pick">Top <input id="garment-top" type="file" accept="image/*" /></label>
               <label class="garment-pick">Bottom <input id="garment-bottom" type="file" accept="image/*" /></label>
               <label class="garment-pick">Dress <input id="garment-dress" type="file" accept="image/*" /></label>
