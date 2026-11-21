@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
     />
-    <script type="module" crossorigin src="/what-to-wear/assets/index-vt_hS-lp.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-BAkz4OH1.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-XtQqme6U.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-DpySAiWY.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -62,6 +62,11 @@
         </div>
         <div id="outfit" aria-live="polite"></div>
         <button id="try-on" type="button" class="secondary try-on-button" hidden>Try it on the mannequin</button>
+        <dialog id="outfit-picker" class="outfit-picker" aria-labelledby="outfit-picker-heading">
+          <h2 id="outfit-picker-heading">Pick one</h2>
+          <div id="outfit-picker-choices" class="outfit-picker-choices"></div>
+          <button id="outfit-picker-close" type="button" class="secondary">Keep this one</button>
+        </dialog>
       </section>
 
       <section class="card closet-entry" aria-labelledby="closet-heading">
@@ -87,8 +92,9 @@
         <form id="add-form" hidden>
           <label class="photo-picker">
             <span>Photo</span>
-            <input id="photo" name="photo" type="file" accept="image/*" required />
+            <input id="photo" name="photo" type="file" accept="image/*" aria-describedby="photo-tip" required />
           </label>
+          <p id="photo-tip" class="status">Photograph one whole item from the front against a plain background.</p>
           <p id="guess-status" class="status guess-status" aria-live="polite"></p>
           <label>
             <span>What is it?</span>
