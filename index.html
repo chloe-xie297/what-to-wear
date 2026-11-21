@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
     />
-    <script type="module" crossorigin src="/what-to-wear/assets/index-XtQqme6U.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-DpySAiWY.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-CsJaktir.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-CwEpDfDQ.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -61,7 +61,6 @@
           <button id="reshuffle" type="button" class="secondary" hidden>Switch outfit</button>
         </div>
         <div id="outfit" aria-live="polite"></div>
-        <button id="try-on" type="button" class="secondary try-on-button" hidden>Try it on the mannequin</button>
         <dialog id="outfit-picker" class="outfit-picker" aria-labelledby="outfit-picker-heading">
           <h2 id="outfit-picker-heading">Pick one</h2>
           <div id="outfit-picker-choices" class="outfit-picker-choices"></div>
@@ -149,85 +148,6 @@
         <img id="piece-picker-photo" alt="Your photo. Tap the piece of clothing to keep." />
         <button id="piece-picker-cancel" type="button" class="secondary">Cancel</button>
       </dialog>
-    </main>
-
-    <main id="fitting-screen" hidden>
-      <div class="screen-header">
-        <button id="close-fitting" type="button" class="secondary back-button">‹ Back</button>
-        <h1>Fitting room</h1>
-      </div>
-
-      <div class="fitting-layout">
-        <div class="card mirror">
-          <p id="fitting-day" class="status"></p>
-          <div id="mannequin" class="mannequin"></div>
-          <p class="status">Drag to turn the mannequin around.</p>
-          <button id="close-up-button" type="button" class="secondary">Close-up of face</button>
-        </div>
-
-        <div class="fitting-side">
-          <section class="card" aria-labelledby="look-heading">
-            <h2 id="look-heading">What it's wearing</h2>
-            <p class="status">Picked for the weather. Use the arrows to try something else.</p>
-            <div id="look-controls"></div>
-          </section>
-
-          <section class="card" aria-labelledby="character-heading">
-            <h2 id="character-heading">My character</h2>
-            <p class="status">Pick a skin tone, hair, eyes and face shape. The mannequin changes right away.</p>
-            <div id="character-options" class="character-options"></div>
-          </section>
-
-          <section class="card" aria-labelledby="try-on-heading">
-            <h2 id="try-on-heading">AI try-on photo</h2>
-            <div id="hf-account" class="hf-account" aria-live="polite"></div>
-            <p class="status">
-              Save a product photo from a brand's website (Zara, Uniqlo…) and add it below. You'll get a photo of the mannequin
-              wearing it from the front. A top and bottom take about a minute.
-            </p>
-            <form id="try-on-form" class="try-on-form">
-              <label class="garment-pick"
-                >Your photo (optional)
-                <span class="pick-hint"
-                  >Standing, facing the camera, whole body in the picture, plain background. Leave it empty to use the
-                  mannequin. Your photo is sent to the free AI service on Hugging Face and isn't saved in the app.</span
-                >
-                <input id="person-photo" type="file" accept="image/*"
-              /></label>
-              <label class="garment-pick">Top <input id="garment-top" type="file" accept="image/*" /></label>
-              <label class="garment-pick">Bottom <input id="garment-bottom" type="file" accept="image/*" /></label>
-              <label class="garment-pick">Dress <input id="garment-dress" type="file" accept="image/*" /></label>
-              <button id="try-on-button" type="submit">Make try-on photo</button>
-            </form>
-            <p id="try-on-status" class="status" aria-live="polite"></p>
-            <figure id="try-on-result" class="try-on-result" hidden>
-              <img id="try-on-photo" alt="The mannequin wearing the clothes from your product photos" />
-              <figcaption><a id="try-on-save" download="try-on.png">Save photo</a></figcaption>
-            </figure>
-          </section>
-
-          <details id="body-panel" class="card">
-            <summary>My measurements</summary>
-            <form id="body-form" novalidate>
-              <fieldset>
-                <legend>Mannequin</legend>
-                <div id="figure-options" class="chips"></div>
-              </fieldset>
-              <div class="measurements">
-                <label>Height <span class="with-unit"><input id="body-heightCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
-                <label>Weight <span class="with-unit"><input id="body-weightKg" type="number" inputmode="decimal" step="0.5" /> kg</span></label>
-                <label>Bust <span class="with-unit"><input id="body-bustCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
-                <label>Waist <span class="with-unit"><input id="body-waistCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
-                <label>Hips <span class="with-unit"><input id="body-hipCm" type="number" inputmode="decimal" step="0.5" /> cm</span></label>
-              </div>
-              <ul id="body-errors" class="form-errors" aria-live="polite"></ul>
-              <button type="submit">Save</button>
-              <p id="body-status" class="status" aria-live="polite"></p>
-              <p class="status">Your measurements are only saved on this device.</p>
-            </form>
-          </details>
-        </div>
-      </div>
     </main>
 
   </body>
