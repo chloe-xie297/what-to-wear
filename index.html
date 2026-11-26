@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
     />
-    <script type="module" crossorigin src="/what-to-wear/assets/index-0EVAaODz.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-BaNpT4fG.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-GbRXeUEB.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-Dtz5i-zh.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -95,7 +95,10 @@
             <span>Photo</span>
             <input id="photo" name="photo" type="file" accept="image/*" aria-describedby="photo-tip" required />
           </label>
-          <p id="photo-tip" class="status">Photograph one whole item from the front against a plain background.</p>
+          <p id="photo-tip" class="status photo-tip">
+            Photograph one whole item from the front against a plain background.
+            <button id="open-photo-guide" type="button" class="secondary photo-guide-button" aria-haspopup="dialog">Photo tips</button>
+          </p>
           <p id="guess-status" class="status guess-status" aria-live="polite"></p>
           <label>
             <span>What is it?</span>
@@ -143,6 +146,110 @@
         <div class="closet-door left"></div>
         <div class="closet-door right"></div>
       </div>
+
+      <dialog id="photo-guide" class="piece-picker photo-guide" aria-labelledby="photo-guide-heading">
+        <h2 id="photo-guide-heading">Taking a good photo</h2>
+        <ol class="photo-guide-list">
+          <li><strong>One item at a time:</strong> the whole thing in the picture, from the front.</li>
+          <li><strong>Lay it flat or hang it:</strong> on a bed, the floor or a hanger. The hanger is taken out.</li>
+          <li><strong>A plain background that stands out:</strong> dark clothes on a light sheet, light clothes on something dark.</li>
+          <li><strong>Even light:</strong> daylight near a window is best. Avoid harsh shadows and the flash.</li>
+          <li><strong>Other clothes in the shot?</strong> Tap "Pick one piece" and then the one to keep.</li>
+          <li><strong>Color or warmth wrong?</strong> Fix it under Edit in your closet.</li>
+        </ol>
+        <svg class="photo-guide-defs" width="0" height="0" aria-hidden="true" focusable="false">
+          <defs>
+            <clipPath id="guide-tee-clip"><path d="M37 13 C40 12 44 11 44 11 C46 16.5 54 16.5 56 11 C56 11 60 12 63 13 L74 18 C77.5 20.5 81.5 25.5 85 31 L76 39 L69 34.5 L69 69 C69 70.4 68.2 71 66.8 71 L33.2 71 C31.8 71 31 70.4 31 69 L31 34.5 L24 39 L15 31 C18.5 25.5 22.5 20.5 26 18 Z"/></clipPath>
+            <linearGradient id="guide-light" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fff" stop-opacity="0.22"/>
+              <stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+              <stop offset="1" stop-color="#000" stop-opacity="0.28"/>
+            </linearGradient>
+            <filter id="guide-blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="0.9"/></filter>
+            <filter id="guide-contact" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0.6" dy="1.6" stdDeviation="1.4" flood-color="#000" flood-opacity="0.28"/></filter>
+            <filter id="guide-harsh" x="-20%" y="-20%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.6"/></filter>
+            <linearGradient id="guide-sheet" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6f2ea"/>
+              <stop offset="1" stop-color="#e3dccf"/>
+            </linearGradient>
+            <linearGradient id="guide-wall" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#eef1f4"/>
+              <stop offset="1" stop-color="#d9dfe5"/>
+            </linearGradient>
+            <linearGradient id="guide-chrome" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#9aa1ab"/>
+              <stop offset="0.5" stop-color="#e8ebef"/>
+              <stop offset="1" stop-color="#7d848e"/>
+            </linearGradient>
+            <symbol id="guide-sheet-bg" viewBox="0 0 100 80">
+              <rect width="100" height="80" fill="url(#guide-sheet)"/>
+              <g fill="none" stroke-linecap="round" filter="url(#guide-blur)">
+                <path d="M-4 22 C20 18 34 30 60 24 S96 16 106 20" stroke="#fff" stroke-opacity="0.7" stroke-width="2.4"/>
+                <path d="M-4 24 C20 20 34 32 60 26 S96 18 106 22" stroke="#b9ae9c" stroke-opacity="0.35" stroke-width="1.4"/>
+                <path d="M-6 62 C18 58 40 70 70 63 S98 58 108 61" stroke="#fff" stroke-opacity="0.6" stroke-width="2.6"/>
+                <path d="M-6 64.5 C18 60.5 40 72.5 70 65.5 S98 60.5 108 63.5" stroke="#b9ae9c" stroke-opacity="0.3" stroke-width="1.6"/>
+              </g>
+            </symbol>
+            <symbol id="guide-wall-bg" viewBox="0 0 100 80">
+              <rect width="100" height="80" fill="url(#guide-wall)"/>
+              <rect width="100" height="80" fill="url(#guide-light)" opacity="0.35"/>
+            </symbol>
+            <symbol id="guide-hanger" viewBox="0 0 100 80">
+              <path d="M50 15 V8.5 a3.4 3.4 0 1 1 3.4 -3.4" fill="none" stroke="url(#guide-chrome)" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M50 14.5 C44 16.5 34 19.5 27 22 C26 22.4 26.3 23.3 27.2 23.3 H72.8 C73.7 23.3 74 22.4 73 22 C66 19.5 56 16.5 50 14.5 Z" fill="none" stroke="url(#guide-chrome)" stroke-width="1.4" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="guide-tee" viewBox="0 0 100 80">
+              <path d="M37 13 C40 12 44 11 44 11 C46 16.5 54 16.5 56 11 C56 11 60 12 63 13 L74 18 C77.5 20.5 81.5 25.5 85 31 L76 39 L69 34.5 L69 69 C69 70.4 68.2 71 66.8 71 L33.2 71 C31.8 71 31 70.4 31 69 L31 34.5 L24 39 L15 31 C18.5 25.5 22.5 20.5 26 18 Z" fill="currentColor"/>
+              <g clip-path="url(#guide-tee-clip)">
+                <path d="M44 11 C46 16.5 54 16.5 56 11 C54 13.2 46 13.2 44 11 Z" fill="#000" fill-opacity="0.35"/>
+                <g fill="none" stroke-linecap="round" filter="url(#guide-blur)">
+                  <path d="M39 40 C44 47 46 55 43.5 66" stroke="#000" stroke-opacity="0.16" stroke-width="2.6"/>
+                  <path d="M40.5 39.5 C45.5 46.5 47.5 54.5 45 65.5" stroke="#fff" stroke-opacity="0.16" stroke-width="1.6"/>
+                  <path d="M59 29 C56 39 58 50 63 61" stroke="#000" stroke-opacity="0.14" stroke-width="2.6"/>
+                  <path d="M60.5 29 C57.5 39 59.5 50 64.5 61" stroke="#fff" stroke-opacity="0.14" stroke-width="1.6"/>
+                  <path d="M48 22 C50.5 28 52 33 51 40" stroke="#000" stroke-opacity="0.1" stroke-width="2"/>
+                  <path d="M20 27 C23 30 25 33 25.5 36" stroke="#000" stroke-opacity="0.12" stroke-width="1.8"/>
+                  <path d="M80 27 C77 30 75 33 74.5 36" stroke="#000" stroke-opacity="0.12" stroke-width="1.8"/>
+                </g>
+                <rect width="100" height="80" fill="url(#guide-light)"/>
+              </g>
+              <g fill="none" stroke-linecap="round">
+                <path d="M44 11 C46 16.5 54 16.5 56 11" stroke="#000" stroke-opacity="0.32" stroke-width="2.2"/>
+                <path d="M44.6 11.4 C46.6 15.4 53.4 15.4 55.4 11.4" stroke="#fff" stroke-opacity="0.22" stroke-width="0.6"/>
+                <path d="M26 18 C29.2 24 31 29.5 31 34.5 M74 18 C70.8 24 69 29.5 69 34.5" stroke="#000" stroke-opacity="0.16" stroke-width="0.6"/>
+                <path d="M17.6 29.6 L25.4 36.6 M82.4 29.6 L74.6 36.6 M32.4 67.8 H67.6" stroke="#fff" stroke-opacity="0.4" stroke-width="0.5" stroke-dasharray="1.1 0.9"/>
+              </g>
+            </symbol>
+          </defs>
+        </svg>
+        <div class="photo-examples">
+            <figure class="photo-example good">
+              <svg viewBox="0 0 100 80" role="img" aria-label="The whole item, from the front"><use href="#guide-sheet-bg" width="100" height="80"/><use href="#guide-tee" width="100" height="80" style="color:#5a7ea6" filter="url(#guide-contact)"/></svg>
+              <figcaption><span aria-hidden="true">✓</span> The whole item, from the front</figcaption>
+            </figure>
+            <figure class="photo-example good">
+              <svg viewBox="0 0 100 80" role="img" aria-label="On a hanger is fine"><use href="#guide-wall-bg" width="100" height="80"/><use href="#guide-hanger" width="100" height="80"/><g transform="translate(0 4)"><use href="#guide-tee" width="100" height="80" style="color:#b0513c" filter="url(#guide-contact)"/></g></svg>
+              <figcaption><span aria-hidden="true">✓</span> On a hanger is fine</figcaption>
+            </figure>
+            <figure class="photo-example good">
+              <svg viewBox="0 0 100 80" role="img" aria-label="Dark clothes on a light background"><use href="#guide-sheet-bg" width="100" height="80"/><use href="#guide-tee" width="100" height="80" style="color:#2a2c31" filter="url(#guide-contact)"/></svg>
+              <figcaption><span aria-hidden="true">✓</span> Dark clothes on a light background</figcaption>
+            </figure>
+            <figure class="photo-example avoid">
+              <svg viewBox="0 0 100 80" role="img" aria-label="Cut off at the edge"><use href="#guide-sheet-bg" width="100" height="80"/><g transform="translate(-14 -6) scale(1.42)"><use href="#guide-tee" width="100" height="80" style="color:#5a7ea6"/></g></svg>
+              <figcaption><span aria-hidden="true">✗</span> Cut off at the edge</figcaption>
+            </figure>
+            <figure class="photo-example avoid">
+              <svg viewBox="0 0 100 80" role="img" aria-label="Too close to the background"><use href="#guide-sheet-bg" width="100" height="80"/><use href="#guide-tee" width="100" height="80" style="color:#ece6da"/></svg>
+              <figcaption><span aria-hidden="true">✗</span> Too close to the background</figcaption>
+            </figure>
+            <figure class="photo-example avoid">
+              <svg viewBox="0 0 100 80" role="img" aria-label="Strong shadows"><use href="#guide-sheet-bg" width="100" height="80"/><g transform="translate(8 6)" opacity="0.6" filter="url(#guide-harsh)"><path d="M37 13 C40 12 44 11 44 11 C46 16.5 54 16.5 56 11 C56 11 60 12 63 13 L74 18 C77.5 20.5 81.5 25.5 85 31 L76 39 L69 34.5 L69 69 C69 70.4 68.2 71 66.8 71 L33.2 71 C31.8 71 31 70.4 31 69 L31 34.5 L24 39 L15 31 C18.5 25.5 22.5 20.5 26 18 Z" fill="#2e261d"/></g><use href="#guide-tee" width="100" height="80" style="color:#5a7ea6"/></svg>
+              <figcaption><span aria-hidden="true">✗</span> Strong shadows</figcaption>
+            </figure>
+        </div>
+        <button id="close-photo-guide" type="button">Got it</button>
+      </dialog>
 
       <dialog id="piece-picker" class="piece-picker" aria-labelledby="piece-picker-heading">
         <h2 id="piece-picker-heading">Tap the piece to keep</h2>
