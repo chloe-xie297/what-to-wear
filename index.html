@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
     />
-    <script type="module" crossorigin src="/what-to-wear/assets/index-GbRXeUEB.js"></script>
-    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-Dtz5i-zh.css">
+    <script type="module" crossorigin src="/what-to-wear/assets/index-VAUOVEET.js"></script>
+    <link rel="stylesheet" crossorigin href="/what-to-wear/assets/index-BnbjR28M.css">
   </head>
   <body>
     <div id="sky" class="sky" aria-hidden="true"></div>
@@ -91,14 +91,16 @@
       <section class="card add-panel">
         <button id="toggle-add" type="button" aria-expanded="false" aria-controls="add-form">+ Add clothes</button>
         <form id="add-form" hidden>
-          <label class="photo-picker">
-            <span>Photo</span>
+          <div class="photo-picker">
+            <div class="photo-heading">
+              <label for="photo">Photo</label>
+              <button id="open-photo-guide" type="button" class="secondary photo-guide-button" aria-haspopup="dialog">
+                <span aria-hidden="true">📷</span> How to take a good photo
+              </button>
+            </div>
             <input id="photo" name="photo" type="file" accept="image/*" aria-describedby="photo-tip" required />
-          </label>
-          <p id="photo-tip" class="status photo-tip">
-            Photograph one whole item from the front against a plain background.
-            <button id="open-photo-guide" type="button" class="secondary photo-guide-button" aria-haspopup="dialog">Photo tips</button>
-          </p>
+          </div>
+          <p id="photo-tip" class="status">Photograph one whole item from the front against a plain background.</p>
           <p id="guess-status" class="status guess-status" aria-live="polite"></p>
           <label>
             <span>What is it?</span>
